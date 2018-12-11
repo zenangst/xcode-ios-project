@@ -36,5 +36,6 @@ Carthage
 # SPM
 .build/
 
-# Injection
-iOSInjectionProject/
+# Generated files
+Generated/*
+!Generated/.gitkeep

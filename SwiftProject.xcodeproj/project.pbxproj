@@ -341,6 +341,7 @@
 			);
 			name = R.swift;
 			outputPaths = (
+				$SRCROOT/Generated/R.generated.swift,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -383,6 +384,7 @@
 			);
 			name = SwiftLint;
 			outputPaths = (
+				$SRCROOT/Generated/R.generated.swift,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
