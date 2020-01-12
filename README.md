@@ -6,7 +6,7 @@ command line.
 ## Features
 
 - [x] A very barebones Xcode project template.
-- [x] Integrated [SwiftLint](https://github.com/realm/SwiftLint) and [R.swift](https://github.com/mac-cain13/R.swift)
+- [x] Integrated [SwiftLint](https://github.com/realm/SwiftLint) and [SwiftGen](https://github.com/SwiftGen/SwiftGen)
 - [x] Schemes for `Staging` and `Production`
 - [x] [unused.rb](https://github.com/PaulTaykalo/swift-scripts)
 

@@ -11,7 +11,6 @@ end
 folder_path = __dir__
 
 # Input
-repo_name = prompt('GitHub repository name')
 bundle_domain = prompt('Client bundle domain')
 project_name = prompt('Project name')
 
@@ -47,8 +46,7 @@ file_names.each do |file_name|
   if !ignored_file_types.include?(File.extname(file_name))
     text = File.read(file_name)
 
-    new_contents = text.gsub(/<REPONAME>/, repo_name)
-    new_contents = new_contents.gsub(/SwiftProject/, project_name)
+    new_contents = text.gsub(/SwiftProject/, project_name)
     new_contents = new_contents.gsub(/BundleDomain/, bundle_domain)
 
     File.open(file_name, "w") {|file| file.puts new_contents }
@@ -79,5 +77,4 @@ FileUtils.rm('init.rb')
 # Setup project
 system("pod install")
 system("git init && git add . && git commit -am 'Initial commit'")
-system("git remote add origin git@github.com:itchdesign/#{repo_name}.git")
 system("open \"#{project_name}.xcworkspace\"")

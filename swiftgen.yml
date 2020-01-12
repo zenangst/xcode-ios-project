@@ -1,0 +1,13 @@
+input_dir: Resources
+output_dir: Generated
+
+strings:
+  inputs: Texts/English.lproj/Text.strings
+  outputs:
+    - templateName: structured-swift4
+      output: Texts/strings.swift
+xcassets:
+  inputs: Graphics/Assets.xcassets
+  outputs:
+    - templateName: swift4
+      output: Graphics/assets-images.swift
